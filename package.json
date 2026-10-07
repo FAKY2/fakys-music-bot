@@ -1,0 +1,26 @@
+{
+  "name": "enginebot-music",
+  "version": "2.0.0",
+  "description": "Lavalink music bot on the EngineBot engine, by levraiberet.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "check": "node scripts/checkSetup.js",
+    "lavalink": "cd lavalink && java -Djavax.net.ssl.trustStore=truststore.jks -Djavax.net.ssl.trustStorePassword=changeit -jar Lavalink.jar",
+    "emojis": "node scripts/makeEmojis.js",
+    "migrate": "node src/core/migrate.js",
+    "dump": "node src/core/dump.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@beret.27/discord-app-emojis": "^1.4.0",
+    "@napi-rs/canvas": "^1.0.3",
+    "discord.js": "^14.27.0",
+    "dotenv": "^16.6.1",
+    "lavalink-client": "^2.11.0"
+  },
+  "license": "MIT"
+}

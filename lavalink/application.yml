@@ -1,0 +1,42 @@
+server:
+  port: 2333
+  address: 127.0.0.1
+
+lavalink:
+  server:
+    password: "replaceit"
+    sources:
+      youtube: false
+      bandcamp: true
+      soundcloud: true
+      twitch: true
+      vimeo: true
+      http: true
+      local: false
+    bufferDurationMs: 400
+    frameBufferDurationMs: 5000
+    opusEncodingQuality: 10
+    resamplingQuality: LOW
+    trackStuckThresholdMs: 10000
+    useSeekGhosting: true
+    playerUpdateInterval: 5
+
+  # The jar is already in lavalink/plugins, so nothing is downloaded on boot.
+  # To let Lavalink fetch it itself, uncomment this and delete the jar:
+  # plugins:
+  #   - dependency: "dev.lavalink.youtube:youtube-plugin:1.18.2"
+  #     snapshot: false
+
+plugins:
+  youtube:
+    enabled: true
+    clients:
+      - MUSIC
+      - ANDROID_MUSIC
+      - WEB
+      - WEBEMBEDDED
+
+logging:
+  level:
+    root: WARN
+    lavalink: INFO

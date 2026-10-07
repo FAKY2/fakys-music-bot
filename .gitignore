@@ -1,0 +1,27 @@
+node_modules/
+.env
+
+# Local data written by the storage drivers and the slash sync cache.
+data/*.json
+data/*.txt
+data/*.tmp
+data/*.edb
+data/*.fusion
+data/*.spectra
+data/*.spectra.idx
+data/*.sqlite
+data/*.sqlite-wal
+data/*.sqlite-shm
+data/.slash-cache
+
+# Emoji module scratch: the converted-image cache and the download folder. The source
+# images in emojis/ are yours to commit.
+emojis/.discord-cache/
+emojis/downloads/
+
+# Lavalink server (the jar is ~96MB, download it yourself)
+lavalink/Lavalink.jar
+lavalink/plugins/
+lavalink/logs/
+lavalink/truststore.jks
+lavalink/lavalink.log
